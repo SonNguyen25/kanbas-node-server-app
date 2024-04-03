@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 const corsOptions = {
-  origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://kanbas-node-server-app-lu4z.onrender.com"],
   credentials: true,
 };
 app.use(cors(corsOptions));
